@@ -1,12 +1,8 @@
-const row = document.createElement("div");
-const square = document.createElement("div");
+const container = document.querySelector("#square-container");
+console.log(container);
 
-row.className = "row";
-square.className = "square";
+let square = document.createElement('div');
+square.classList.add('square');
+container.append(square);
 
-document.getElementById("board").appendChild(row);
-document.getElementById("board").lastChild.appendChild(square);
-document.getElementById("board").lastChild.appendChild(square);
-// document.getElementById("board").lastChild.appendChild(square);
-// document.getElementById("board").lastChild.appendChild(square);
-// document.getElementById("board").lastChild.appendChild(square);
+

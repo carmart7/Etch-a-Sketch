@@ -1,13 +1,39 @@
-html {
-    font-size: 16px;
+body {
+    background-color: teal;
 }
 
-.row {
+h1 {
     display: flex;
+    justify-content: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.clear-button {
+    background: chocolate;
+    font-size: 25px;
+}
+
+#outer-container {
+    display: flex;
+    justify-content: center;
+}
+
+#square-container {
+    display: grid;
+    height: 600px;
+    width: 600px;
+    border: pink solid 1px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 }
 
 .square {
-    width: 10px;
-    height: 10px;
-    background: black;
+    padding: 3px;
+    border: 1px black;
+    background: cyan;
 }
